@@ -1,0 +1,56 @@
+{% extends "admin base.html" %} 
+{% block content %}
+
+<form method="POST">
+    <h3 align="center"> Create new stock entry <h3>
+    <div class="form-group">
+      <label for="">Product Name</label>
+      <input 
+         type="text" 
+         class="form-control" 
+         id="ProductName" 
+         name="ProductName" 
+         placeholder="Enter ProductName"
+    />
+    </div>
+
+    <div class="form-group">
+      <label for="stocklevel">stocklevel</label>
+      <input 
+         type="number" 
+         class="form-control" 
+         id="password1" 
+         name="password1" 
+         placeholder="Enter Password"
+    />
+    </div>
+
+    <div class="form-group">
+      <label for="barcode">Barcode</label>
+      <input 
+         type="text" 
+         class="form-control" 
+         id="barcode" 
+         name="barcode" 
+         placeholder="Confim Password"
+     />
+    </div>
+
+    <div class="form-group">
+      <label for="Pricing">Pricing</label>
+      <input 
+         type="text" 
+         class="form-control" 
+         id="Pricing" 
+         name="Pricing" 
+         placeholder="Confim Password"
+     />
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary"> Submit </button>
+
+
+
+
+
+{%endblock%}

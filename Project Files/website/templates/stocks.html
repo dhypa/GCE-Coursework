@@ -1,0 +1,73 @@
+{% extends "admin base.html" %} 
+
+{% block content %}
+  <br>
+  <div class:"container" align="center">
+    <a href="insert link to form for adding stock">
+        <button class="block">
+            Add Stock <img src="/static/plus_icon.png"
+            style="width: 30px; height: 20px; object-fit: contain;"
+            ></i>
+        </button>
+      </a>
+
+      
+    <a href="insert link for editting stock">
+        <button class="block">
+            Edit Stock <img src="/static/edit_icon.png"
+            style="width: 30px; height: 20px; object-fit: contain;"
+            ></i>
+        </button>
+
+      </a>
+    <a href="/stocks/delete">
+        <button class="block">
+            Delete Stock <img src="/static/recycle-bin-icon-25.png"
+            style="width: 30px; height: 20px; object-fit: contain;"
+            ></i>
+        </button>
+          
+      </a>
+  
+
+
+
+
+
+  </div>
+
+  <br>
+
+
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>ProductID</th>
+        <th>ProductName</th>
+        <th>stocklevel</th>
+        <th>barcode</th>
+        <th>Pricing</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable({
+        ajax: '/api/data',
+        serverSide: true,
+        columns: [
+          {data: 'ProductID'},
+          {data: 'ProductName'},
+          {data: 'stocklevel'},
+          {data: 'barcode'},
+          {data: 'Pricing'}
+        ],
+      });
+    });
+  </script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "admin base.html" %} 
+{% block content %}
+
+<div class="container">
+
+    <form method="POST">
+        <h3 align="center"> Enter ProductID for deletion <h3>
+        <div class="form-group">
+          <label for="Name">ProductID</label>
+          <input 
+             type="int" 
+             class="form-control" 
+             id="ProductID" 
+             name="ProductID" 
+             placeholder="Enter ProductID"
+        />
+        </div>
+        <button type="Login" class="btn btn-primary"> Submit for deletion</button>
+</div>
+    
+
+
+
+
+{%endblock%}
