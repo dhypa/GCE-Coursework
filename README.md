@@ -1,6 +1,6 @@
 # GCE-Coursework
 
-🛑 **ABANDON ALL HOPE, YE WHO ENTER HERE** 🛑
+🛑
 **The content in this repo should not see the sight of day**
 
 
